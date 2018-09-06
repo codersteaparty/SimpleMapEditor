@@ -68,18 +68,11 @@ public class MainScreen extends BasicGame {
 
 	
 	
-		/*g.drawImage(Eraser, );
-		g.drawImage(DownloadMaps, );
-		g.drawImage(SaveMaps, );
-		g.drawImage(SaveElement, );
-		g.drawImage(DownloadElement, );	
-		g.drawImage(AddElement,);	
-		*/
-		
 		Brush1 = new AbstractButton(2,60,47,42,Brush){
 			@Override
 			public void metod(){
 			//и тут, то, что ты от него хочешь
+				System.out.println("Brush");
 			}
 			};
 			
@@ -89,6 +82,7 @@ public class MainScreen extends BasicGame {
 			@Override
 			public void metod(){
 			//и тут, то, что ты от него хочешь
+				System.out.println("Eraser1");
 			}
 			};
 
@@ -98,6 +92,7 @@ public class MainScreen extends BasicGame {
 			@Override
 			public void metod(){
 			//и тут, то, что ты от него хочешь
+				System.out.println("DownloadMaps1");
 			}
 			};
 	
@@ -106,6 +101,7 @@ public class MainScreen extends BasicGame {
 			@Override
 			public void metod(){
 			//и тут, то, что ты от него хочешь
+				System.out.println("SaveMaps1");
 			}
 			};	
 			
@@ -114,6 +110,8 @@ public class MainScreen extends BasicGame {
 			@Override
 			public void metod(){
 			//и тут, то, что ты от него хочешь
+				System.out.println("SaveElement1");
+				
 			}
 			};	
 			
@@ -122,6 +120,7 @@ public class MainScreen extends BasicGame {
 			@Override
 			public void metod(){
 			//и тут, то, что ты от него хочешь
+				System.out.println("DownloadElement1");
 			}
 			};	
 			
@@ -130,16 +129,24 @@ public class MainScreen extends BasicGame {
 			@Override
 			public void metod(){
 			//и тут, то, что ты от него хочешь
+				System.out.println("AddElement1");
 			}
 			};	
 			
 	}
 	
 	
+	
 	@Override
 	public void mouseClicked(int button, int x, int y, int clickCount) {
 		super.mouseClicked(button, x, y, clickCount);
-		
+		Brush1.Chek(x, y);
+		Eraser1.Chek(x, y);
+		DownloadMaps1.Chek(x, y);
+		SaveMaps1.Chek(x, y);
+		SaveElement1.Chek(x, y); 
+		DownloadElement1.Chek(x,y);
+		AddElement1.Chek(x,y);
 	}
 	
 	@Override
