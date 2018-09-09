@@ -25,8 +25,7 @@ Rectangle HitBox;
 	public AbstractButton(Rectangle r,Image image) {
 		this.x=r.getX();
 		this.y=r.getY(); 
-		this.Width
-		=r.getWidth();
+		this.Width=r.getWidth();
 		this.Height=r.getHeight();	
 		r= new Rectangle(x,y,Width,Height);
 		this.image=image;
