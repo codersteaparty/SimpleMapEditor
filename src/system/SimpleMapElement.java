@@ -4,8 +4,10 @@ import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.geom.Rectangle;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
-public class Elements {
+public class SimpleMapElement {
 	String Type;
 	float Width;
 	float Height;
@@ -14,7 +16,7 @@ public class Elements {
 	Image image;
 	Rectangle HitBox;
 
-	public Elements(String Type, int x, int y, int Width, int Height, Image image) {
+	public SimpleMapElement(String Type, int x, int y, int Width, int Height, Image image) {
 		this.Type = Type;
 		this.x = x;
 		this.y = y;
@@ -29,9 +31,8 @@ public class Elements {
 		image.draw(x, y);
 		g.draw(HitBox);
 	}
-
-	public String XMLPars() {
-
-		return null;
+	
+	public void toXML(Document map, Element parent) {
+		//TODO: написать XML-представление элемента
 	}
 }

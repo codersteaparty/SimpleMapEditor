@@ -146,7 +146,7 @@ public class MainScreen extends BasicGame {
 
 	public static void main(String[] args) throws SlickException {
 		// TODO Auto-generated method stub
-		AppGameContainer game = new AppGameContainer(new MainScreen("Map Editor"));
+		AppGameContainer game = new AppGameContainer(new MainScreen("Layer Editor"));
 		game.setDisplayMode(800, 600, false);
 		game.setTargetFrameRate(60);
 		game.start();
